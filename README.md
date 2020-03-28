@@ -7,13 +7,13 @@
 - express
 - http
 
-### Funionalidades da aplicação
+### Funcionalidades da aplicação
 
 - Enviar mensagem em tempo real para todos os sockets conectados.
 - Conectar varios sockets ao mesmo tempo.
 - Enviar e receber mensagem em tempo real.
 
-### Estartando servidor node
+### Estartando servidor node via terminal
 
 ```bash
 
