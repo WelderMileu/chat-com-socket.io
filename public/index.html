@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Websocket com socket.io</title>
+		<link rel="stylesheet" href="style.css">
+
+		<!-- Importando via cdn o font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	</head>
+	<body>
+		<div class="container">
+			
+			<!-- Container de informação sobre os usuarios fictcios -->
+			<div class="users">
+				<div class="group">
+					<p class="title"><i class="fa fa-comments-o"></i>Name Goup<p>
+					<p class="group-name">Javascript</p>
+				</div>
+				<div class="users-users">
+					<p class="title"><i class="fa fa-users"></i> Users Online</p>
+					<div class="usuarios">
+						<p>Camila</p>
+						<p>Paulo</p>
+						<p>Maria</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Formulario de menssagens da nossa aplicação -->
+			<form action="#" id="form">
+				<div class="chatbox">
+
+					<!-- Container que ira exibir as menssagens vindo do nosso back-end -->
+					<div class="msg">
+						<p class="date">12-13-1520 9:30</p>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
+				</div>
+				
+				<div class="form">
+					<input type="text" class="input-form-control" placeholder="Escreva ...">
+					<button type="submit" id="submit">
+						<i class="fa fa-send-o"></i>
+						Send Message
+					</button>
+				</div>
+			</form>
+		</div>
+		
+		<!-- Imporatando o socket io -->
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
